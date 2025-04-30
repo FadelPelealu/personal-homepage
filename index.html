@@ -1,11 +1,82 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Homepage</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fadel Pelealu | Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1 style="color: red;">Halo! Website Saya 🎉</h1>
+    <header>
+        <div class="container">
+            <h1>Fadel Pelealu</h1>
+            <p>Web Developer | Informatics Student | Tech Enthusiast</p>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate Informatics student at Universitas Sam Ratulangi, with strong interest in web development, cybersecurity, and UI/UX design. I enjoy building simple yet effective web solutions and learning new technologies.</p>
+        </div>
+    </section>
+
+
+
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="imagesfoto1.jpg" alt="Photo 1" />
+                <img src="imagesfoto2.jpg" alt="Photo 2" />
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="section">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="blog-list">
+                <article class="blog-post">
+                    <h3>Why I Love Web Development</h3>
+                    <p>Sharing my journey into web development and why I find it exciting to build for the web.</p>
+                    <a href="#">Read More</a>
+                </article>
+                <article class="blog-post">
+                    <h3>Getting Started with 2FA</h3>
+                    <p>A brief introduction to two-factor authentication and why it's important for online security.</p>
+                    <a href="#">Read More</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <input type="text" id="name" placeholder="Your Name" required />
+                <input type="email" id="email" placeholder="Your Email" required />
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Fadel Pelealu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
